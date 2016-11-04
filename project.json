@@ -69,7 +69,7 @@
   },
 
   "scripts": {
-    "prepublish": [ "npm i", "node_modules\\.bin\\webpack.cmd --config webpack.js" ],
+    "prepublish": [ "npm i", "node_modules\\.bin\\webpack.cmd --config webpack.config.js" ],
     "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
   },
 

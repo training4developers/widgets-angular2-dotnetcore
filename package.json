@@ -1,11 +1,12 @@
 {
-  "name": "wnow-angular2-dotnetcore",
+  "name": "widgets-angular2-dotnetcore",
   "version": "1.0.0",
+  "description": "An example Widgets Tool application using Angular 2 and .NET Core",
   "scripts": {
-    "start": "dotnet run",
+    "start": "npm run webpack-once && dotnet run",
     "postinstall": "npm run typings && npm run webpack-once && dotnet restore",
     "typings": "typings install",
-    "clean": "rimraf wwwroot",
+    "clean": "rimraf wwwroot bin obj",
     "webpack": "webpack --config ./webpack.config.js --watch",
     "webpack-once": "webpack --config ./webpack.config.js"
   },
